@@ -5,8 +5,8 @@ import org.karolinawidz.model.Employees;
 import java.math.BigDecimal;
 
 public interface DataReader {
-	Employees readData();
 
+	Employees readData();
 	default BigDecimal sumSalaries(Employees employees, String position) {
 		BigDecimal salaries = BigDecimal.ZERO;
 		return employees.getEmployees().stream()

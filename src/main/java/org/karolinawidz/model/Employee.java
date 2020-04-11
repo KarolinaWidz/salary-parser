@@ -3,8 +3,11 @@ package org.karolinawidz.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import org.apache.commons.csv.CSVRecord;
+import org.karolinawidz.reader.csvReader.Headers;
 import org.karolinawidz.reader.jsonReader.DifferentSignDeserializer;
 import java.math.BigDecimal;
 
@@ -12,6 +15,7 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @ToString
+@NoArgsConstructor
 public class Employee {
 
 	private Integer id;
@@ -20,9 +24,6 @@ public class Employee {
 	private String job;
 	@JsonDeserialize(using = DifferentSignDeserializer.class)
 	private BigDecimal salary;
-
-	public Employee() {
-	}
 
 	public Employee(Integer id, String name, String surname, String job, BigDecimal salary) {
 		this.id = id;
