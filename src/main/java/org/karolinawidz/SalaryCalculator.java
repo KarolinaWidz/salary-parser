@@ -5,7 +5,7 @@ import org.karolinawidz.reader.DataReader;
 import java.math.BigDecimal;
 
 class SalaryCalculator {
-	BigDecimal sumSalariesFromPosition(DataReader dataReader, String position){
-		return dataReader.sumSalaries(dataReader.readData(),position);
+	BigDecimal sumSalariesFromPosition(String fileName, DataReader dataReader, String position){
+		return dataReader.sumSalaries(dataReader.parseData(fileName),position);
 	}
 }
