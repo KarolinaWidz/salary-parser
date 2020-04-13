@@ -2,7 +2,7 @@ package org.karolinawidz.reader;
 
 import org.apache.commons.io.input.BOMInputStream;
 import org.karolinawidz.model.Employees;
-import org.karolinawidz.reader.jsonReader.JsonDataReader;
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -13,7 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public interface DataReader {
-	Logger LOGGER = Logger.getLogger(JsonDataReader.class.getName());
+	Logger LOGGER = Logger.getLogger(DataReader.class.getName());
 
 	default Reader readData(String fileName){
 		Reader reader = null;
