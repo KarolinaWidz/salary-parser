@@ -23,7 +23,7 @@
         <jacksonVersion>2.9.8</jacksonVersion>
         <lombokVersion>1.18.12</lombokVersion>
         <commonsCsvVersion>1.8</commonsCsvVersion>
-        <commonsIoVersion>2.6</commonsIoVersion>
+        <commonsIoVersion>2.7</commonsIoVersion>
         <junitApiVersion>5.6.2</junitApiVersion>
         <junitEngineVersion>5.6.2</junitEngineVersion>
         <junitParamVersion>5.5.2</junitParamVersion>
