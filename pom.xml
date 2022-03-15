@@ -20,7 +20,7 @@
         </plugins>
     </build>
     <properties>
-        <jacksonVersion>2.9.8</jacksonVersion>
+        <jacksonVersion>2.9.10.8</jacksonVersion>
         <lombokVersion>1.18.12</lombokVersion>
         <commonsCsvVersion>1.8</commonsCsvVersion>
         <commonsIoVersion>2.7</commonsIoVersion>
